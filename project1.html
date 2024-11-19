@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+    Project 1 - Fire Bot
+    Created and designed by Ananth Durbha
+-->
+<html>
+	<head>
+		<title>Fire Bot - Project 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Fire Bot Project</h1>
+						<p>Enhancing firefighting capabilities through autonomous robotics.</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+						<section id="content" class="main">
+							<!-- Project Image -->
+							<span class="image main"><img src="images/project1.jpg" alt="Fire Bot" /></span>
+							
+							<!-- Motivation -->
+							<h2>Motivation</h2>
+							<p>The Fire Bot project was driven by the need to minimize human risk in hazardous firefighting environments. Fires in inaccessible or dangerous areas often put firefighters’ lives at risk. This project aimed to develop an autonomous firefighting robot capable of navigating and extinguishing simulated fires, serving as a proof-of-concept for robotics in emergency response scenarios.</p>
+							
+							<!-- Inspiration -->
+							<h2>Inspiration</h2>
+							<p>Inspired by advancements in robotics and computer vision, the team explored how robots could enhance firefighting capabilities. The project was influenced by the principles of <em>“Development of Fire Fighting Robot (QRob)”</em> and aimed to merge autonomous navigation with manual control systems for enhanced precision and adaptability.</p>
+							
+							<!-- Components Used -->
+							<h2>Components Used</h2>
+							<ul>
+								<li><strong>Sensors:</strong> QTI sensors for line detection, Infrared (IR) sensors for fire detection.</li>
+								<li><strong>Microcontroller:</strong> ATmega328P-based PCB for system integration.</li>
+								<li><strong>Actuators:</strong> Continuous rotation servos for precise movement control, a servo motor for ladder deployment.</li>
+								<li><strong>Vision System:</strong> OV2640 camera module integrated with OpenCV for real-time object detection.</li>
+								<li><strong>Communication:</strong> NRF24L01+ wireless transceiver for remote control.</li>
+								<li><strong>Power Source:</strong> 4x 1.5V AA batteries and 1x 9V battery.</li>
+								<li><strong>Additional Components:</strong> Dual H-bridge motor driver (L298N), custom joystick interface for manual control.</li>
+							</ul>
+
+							<!-- Challenges Faced -->
+							<h2>Challenges Faced</h2>
+							<ul>
+								<li>Achieving reliable autonomous navigation due to sensor calibration and arena limitations.</li>
+								<li>Managing power constraints while integrating multiple sensors and actuators within the $300 budget.</li>
+								<li>Developing effective object detection algorithms with limited processing power on the microcontroller.</li>
+								<li>Ensuring precise ladder deployment in varying fire scenarios.</li>
+							</ul>
+
+							<!-- Results -->
+							<h2>Results</h2>
+							<ul>
+								<li><strong>Milestone 1:</strong> Successfully navigated a straight line over a distance of 6 feet while detecting and distinguishing single and double white lines in a random sequence. The robot demonstrated consistent and accurate performance.</li>
+								<li><strong>Milestone 2:</strong> The robot received driving commands (forward, backward, turn) in real time from a base station using wireless radio. An out-of-bounds detection system was implemented, triggering a specific LED when the robot exited the designated area.</li>
+								<li><strong>Milestone 3:</strong> Detected IR signals to simulate fire detection and successfully deployed a ladder to extinguish the fire. The break beam sensor validated successful ladder deployment by turning off the IR signal and activating a green LED to signify extinguishing the fire.</li>
+								<li><strong>Final Achievement:</strong> The project met all milestones, achieving robust autonomous navigation, precise manual control, and effective fire simulation response. The system was validated in a controlled environment, showcasing its potential for real-world applications.</li>
+							</ul>
+
+							<!-- Technologies Used -->
+							<h2>Technologies Used</h2>
+							<ul>
+								<li><strong>Programming:</strong> Arduino IDE, Python (OpenCV integration).</li>
+								<li><strong>Control Systems:</strong> ATmega328P microcontroller, H-bridge motor drivers.</li>
+								<li><strong>Vision Processing:</strong> OpenCV for object detection.</li>
+								<li><strong>Wireless Communication:</strong> NRF24L01+ transceiver.</li>
+								<li><strong>Sensors and Actuators:</strong> QTI sensors, IR sensors, servos.</li>
+							</ul>
+
+							<!-- Features -->
+							<h2>Features</h2>
+							<ul>
+								<li>Autonomous navigation using QTI sensors in an 8’ x 8’ arena.</li>
+								<li>Fire detection via IR sensors with adjustable detection distance.</li>
+								<li>Real-time object detection with OpenCV-powered vision system.</li>
+								<li>Manual joystick control for enhanced precision in challenging scenarios.</li>
+								<li>Lightweight and compact design under 900g with efficient power consumption.</li>
+							</ul>
+
+							<!-- Future Scope -->
+							<h2>Future Scope</h2>
+							<ul>
+								<li>Advanced Sensing: Integration of thermal imaging cameras for more accurate fire detection.</li>
+								<li>Improved Autonomy: Use of advanced AI algorithms for better navigation and decision-making.</li>
+								<li>Multi-Robot Collaboration: Development of a networked system for coordinated firefighting operations.</li>
+								<li>Enhanced Power Management: Adoption of rechargeable lithium-ion batteries for extended operational time.</li>
+								<li>IoT Integration: Real-time data transmission to cloud-based monitoring systems for remote control and analysis.</li>
+							</ul>
+
+							
+							<!-- Video of Firebot -->
+							 <h2>Video</h2>
+							 <p>
+								Watch the Fire Bot in action: 
+								<a href="#" onclick="playVideo('videos/firebot.mp4')" class="button">Play Video</a>
+							</p>
+							<div id="videoPlayer" style="display:none; margin-top: 20px;">
+								<video controls style="width:100%; max-width:600px;">
+									<source src="" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<button onclick="closeVideo()" style="margin-top: 10px;">Close Video</button>
+							</div>
+						</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Get in touch</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>University of Delaware &bull; Newark, DE 19716 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(302) 730-6150 </dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:durbhaananth@gmail.com">durbhaananth@gmail.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://x.com/AnanthDurbha" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=100006620868575" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/ananth_durbha/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/durbhaananth" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/durbhaananth/" class="icon brands fa-linkedin alt" target="_blank">
+									<span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Ananth Durbha</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		
+			<script>
+				function playVideo(videoSrc) {
+					const videoPlayer = document.getElementById('videoPlayer');
+					const video = videoPlayer.querySelector('video');
+					video.src = videoSrc;
+					videoPlayer.style.display = 'block';
+					video.play();
+				}
+			
+				function closeVideo() {
+					const videoPlayer = document.getElementById('videoPlayer');
+					const video = videoPlayer.querySelector('video');
+					video.pause();
+					video.src = '';
+					videoPlayer.style.display = 'none';
+				}
+			</script>	
+
+
+
+	</body>
+</html>

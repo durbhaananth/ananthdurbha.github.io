@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Multi-Resolution Stereo Analysis</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+        /* Custom style to resize the image */
+        .image.main img {
+            max-width: 50%; /* Reduce width to 50% of the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto; /* Center the image */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1>Multi-Resolution Stereo Analysis</h1>
+            <p>Enhanced stereo vision with region and feature-based matching.</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <section id="content" class="main">
+				<!-- Project Image -->
+                <span class="image main"><img src="images/project4.jpg" alt="Multi-Resolution Stereo Analysis" /></span>
+
+                <!-- About the Project -->
+                <h2>About the Multi-Resolution Stereo Analysis Project</h2>
+                <p><strong>Motivation:</strong> This project aimed to implement a multi-resolution stereo analysis system leveraging region and feature-based matching to enhance depth perception and disparity calculations for stereo image pairs. The focus was on achieving accurate disparity maps by integrating advanced algorithms with customizable user options.</p>
+
+                <!-- Techniques Used -->
+                <h2>Techniques Used</h2>
+                <h3>Region-Based Analysis</h3>
+                <ul>
+                    <li>User-defined template and matching window sizes (square or rectangular).</li>
+                    <li>Matching performed along the x-direction using metrics such as:
+                        <ul>
+                            <li>Sum of Absolute Differences (SAD)</li>
+                            <li>Sum of Squared Differences (SSD)</li>
+                            <li>Normalized Cross-Correlation (NCC)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Feature-Based Analysis</h3>
+                <ul>
+                    <li>Harris corner detector for feature extraction and matching.</li>
+                    <li>Matching scores included SAD, SSD, and NCC for flexibility.</li>
+                </ul>
+
+                <!-- Validity Check -->
+                <h2>Validity Check and Gap Filling</h2>
+                <ul>
+                    <li>Disparity validation through left-to-right and right-to-left matching.</li>
+                    <li>Gaps filled using adaptive neighborhood averaging with options for larger window sizes for robust interpolation.</li>
+                </ul>
+
+                <!-- Performance -->
+                <h2>Performance</h2>
+                <ul>
+                    <li>Successfully generated accurate disparity maps for stereo pairs.</li>
+                    <li>Incorporated region-based analysis at the top resolution and feature-based matching at lower resolutions for optimal results.</li>
+                </ul>
+
+                <!-- Results -->
+                <h2>Results</h2>
+                <ul>
+                    <li>Enhanced depth perception for 5 different stereo pairs.</li>
+                    <li>Validated multi-resolution analysis with disparity maps across varying levels.</li>
+                    <li>Minimized disparity errors and improved stereo image alignment accuracy.</li>
+                </ul>
+
+                <!-- Future Scope -->
+                <h2>Future Scope</h2>
+                <ul>
+                    <li><strong>Enhanced Features:</strong> Integration with deep learning-based matching methods.</li>
+                    <li><strong>Faster Algorithms:</strong> Real-time disparity calculations using parallel processing.</li>
+                    <li><strong>Applications:</strong> Deployment in autonomous systems and 3D reconstruction tasks.</li>
+                </ul>
+
+                <!-- GitHub Repository -->
+                <h2>GitHub Repository</h2>
+                <p>                
+                    Explore the details and code for the Multi-Resolution Stereo Analysis Project: 
+                    <a href="https://github.com/durbhaananth/MultiResolutionStereoAnalysis_Project" target="_blank">Multi-Resolution Stereo Analysis Project Repository</a>
+                </p>
+            </section>
+        </div>
+
+        <!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Get in touch</h2>
+				<dl class="alt">
+					<dt>Address</dt>
+					<dd>University of Delaware &bull; Newark, DE 19716 &bull; USA</dd>
+					<dt>Phone</dt>
+					<dd>(302) 730-6150 </dd>
+					<dt>Email</dt>
+					<dd><a href="mailto:durbhaananth@gmail.com">durbhaananth@gmail.com</a></dd>
+				</dl>
+				<ul class="icons">
+					<li><a href="https://x.com/AnanthDurbha" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100006620868575" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/ananth_durbha/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/durbhaananth" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/durbhaananth/" class="icon brands fa-linkedin alt" target="_blank">
+						<span class="label">LinkedIn</span></a></li>
+				</ul>
+			</section>
+			<p class="copyright">&copy; Ananth Durbha</p>
+		</footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

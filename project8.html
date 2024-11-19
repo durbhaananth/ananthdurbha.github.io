@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Flexible Fan Design</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Custom style for resizing the image */
+        .image.main img {
+            max-width: 50%; /* Reduce width to 50% of the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto; /* Center the image */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Flexible Fan Design</h1>
+            <p>Bioinspired fan design for enhanced cooling and efficiency.</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <section id="content" class="main">
+
+                <!-- Project Image -->
+                <span class="image main"><img src="images/project8.jpg" alt="Flexible Fan Design" /></span>
+
+                <!-- About the Project -->
+                <h2>About the Flexible Fan Design</h2>
+                <p><strong>Motivation:</strong> This project was inspired by the regional stiffness variations observed in tuna fish fins, which exhibit a gradient of decreasing stiffness from the leading edge to the trailing edge. By mimicking this stiffness distribution, the flexible fan design aimed to improve cooling effectiveness, reduce drag, and achieve higher efficiency compared to traditional rigid fan designs.</p>
+
+                <p><strong>Inspiration:</strong> The bioinspired design replicates the stiffness gradient found in natural systems, allowing for beneficial deformation patterns and vortex shedding. This approach optimizes airflow dynamics, enhances cooling, and reduces noise.</p>
+
+                <!-- Flexibility Description -->
+                <h2>Flexibility Description</h2>
+                <p>The fan was 3D-printed with a spanwise stiffness gradient. The leading edge and base were made rigid, transitioning to a fully flexible trailing edge. The stiffness distribution values of [0.75, 0.25, 0.5, 0.25, 0.25, 0.75] mimic the natural gradient observed in tuna fish fins, providing enhanced flexibility and better adaptability during motion.</p>
+
+                <!-- Simulation -->
+                <h2>Simulation</h2>
+                <p>Simulations were conducted to analyze the fan’s behavior under fluidic conditions. Using the Navier-Stokes equations and the Bernoulli-Euler beam equation, the deflection of the fan was studied. Results indicated favorable deformation patterns that improve cooling effectiveness at the cost of slightly higher power consumption.</p>
+
+                <!-- Performance Assessment -->
+                <h2>Performance Assessment</h2>
+                <ul>
+                    <li><strong>Thermal Efficiency:</strong> The flexible fan reduced face temperature from 32.4°C to 31°C, outperforming the rigid fan.</li>
+                    <li><strong>Velocity Distribution:</strong> The flexible fan maintained higher airflow velocities further from the fan, indicating better momentum transfer.</li>
+                    <li><strong>Power Consumption:</strong> The flexible fan required more power due to its deformable elements, with consistent oscillation cycles.</li>
+                </ul>
+
+                <!-- Proposed Design Integration -->
+                <h2>Proposed Design Integration</h2>
+                <p>The flexible fan design integrates bioinspired stiffness gradients with compliant mechanisms. This approach enhances cooling efficiency while maintaining a sleek design. Future iterations could incorporate additional compliant elements and optimize materials for better performance.</p>
+
+                <!-- Video Section -->
+                 <h2>Video</h2>
+                 <p>
+                    Watch the flexible fan design in action: 
+                    <a href="#" onclick="playVideo('videoPlayerFlex', 'videos/flex.mp4')" class="button">Play Video</a>
+                </p>
+                <div id="videoPlayerFlex" style="display:none; margin-top: 20px;">
+                    <video controls style="width:100%; max-width:600px;">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button onclick="closeVideo('videoPlayerFlex')" style="margin-top: 10px;">Close Video</button>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Get in touch</h2>
+                <dl class="alt">
+                    <dt>Address</dt>
+                    <dd>University of Delaware &bull; Newark, DE 19716 &bull; USA</dd>
+                    <dt>Phone</dt>
+                    <dd>(302) 730-6150</dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:durbhaananth@gmail.com">durbhaananth@gmail.com</a></dd>
+                </dl>
+                <ul class="icons">
+                    <li><a href="https://x.com/AnanthDurbha" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100006620868575" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/ananth_durbha/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/durbhaananth" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/durbhaananth/" class="icon brands fa-linkedin alt" target="_blank">
+                        <span class="label">LinkedIn</span></a></li>
+                </ul>
+            </section>
+            <p class="copyright">&copy; Ananth Durbha</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- JavaScript Functions -->
+<script>
+    function playVideo(playerId, videoSrc) {
+        const videoPlayer = document.getElementById(playerId);
+        videoPlayer.style.display = 'block';
+        const videoElement = videoPlayer.querySelector('video');
+        videoElement.querySelector('source').src = videoSrc;
+        videoElement.load();
+        videoElement.play();
+    }
+
+    function closeVideo(playerId) {
+        const videoPlayer = document.getElementById(playerId);
+        const videoElement = videoPlayer.querySelector('video');
+        videoElement.pause();
+        videoElement.querySelector('source').src = "";
+        videoPlayer.style.display = 'none';
+    }
+</script>
+</body>
+</html>

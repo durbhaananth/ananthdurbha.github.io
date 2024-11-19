@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+    Project 7 - Bioinspired Pier Design and Analysis
+    Created and designed by Ananth Durbha
+-->
+<html>
+<head>
+    <title>Bioinspired Pier - Project 7</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+        /* Custom style to resize the image */
+        .image.main img {
+            max-width: 50%; /* Reduce width to 50% of the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto; /* Center the image */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Bioinspired Pier Design</h1>
+            <p>Innovative structural design inspired by nature</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <section id="content" class="main">
+				<!-- Project Image -->
+                <span class="image main"><img src="images/project7.jpg" alt="Bioinspired Pier Design" /></span>
+
+                <!-- About the Project -->
+                <h2>About the Bioinspired Pier Project</h2>
+                <p><strong>Motivation:</strong> This project was driven by the need to create a strong, durable, and lightweight structure for underwater and high-stress environments. Taking inspiration from nature, the shiitake mushroom and loofah sponge served as models for adhesion and structural integrity, respectively.</p>
+                <p><strong>Inspiration:</strong> The shiitake mushroom's blunt edges and robust cap-stem structure inspired the adhesion method, while the porous lattice of the loofah sponge informed the energy absorption and stress distribution design. Together, these biomimetic elements provided a durable and resilient structure suitable for demanding applications.</p>
+
+                <!-- Technical Overview -->
+                <h2>Technical Overview</h2>
+                <h3>Adhesion Design</h3>
+                <ul>
+                    <li>Mushroom-like extrusion design optimized for underwater adhesion.</li>
+                    <li>Dimensions: 100x100 mm surface area, 3 mm base, 4.45 mm top, 6.1 mm spacing for effective attachment and detachment.</li>
+                    <li>Tested to withstand 20 kg force in benchtop trials.</li>
+                </ul>
+
+                <h3>Lattice Structure</h3>
+                <ul>
+                    <li>Loofah sponge-inspired lattice structure for load distribution and resilience.</li>
+                    <li>Dimensions: 50x50x100 mm with a weight of 50.33 g.</li>
+                    <li>Load-bearing capacity: 7,000 N peak under vertical load, with deformation starting at 4,000 N.</li>
+                    <li>Failure mode: Localized buckling under extreme loads.</li>
+                </ul>
+
+                <h3>Performance Testing</h3>
+                <ul>
+                    <li><strong>Hydraulic Press Test:</strong> Elastic deformation observed up to 2 mm at 7,000 N, with stabilized deformation around 12 mm at 4,000 N.</li>
+                    <li><strong>Load Test:</strong> Velcro attachment maintained integrity up to 10 pounds; separation occurred beyond this point without structural damage.</li>
+                </ul>
+
+                <!-- Challenges and Solutions -->
+                <h2>Challenges and Solutions</h2>
+                <ul>
+                    <li><strong>Adhesion:</strong> Optimized Velcro spacing for improved attachment and detachment.</li>
+                    <li><strong>Load Distribution:</strong> Increased lattice thickness to enhance structural integrity under high stress.</li>
+                </ul>
+
+                <!-- Technologies Used -->
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>Design:</strong> CAD modeling using Onshape for precise structural representation.</li>
+                    <li><strong>Testing:</strong> Hydraulic press for force-displacement analysis and load testing setup.</li>
+                    <li><strong>Materials:</strong> Water-resistant polymers for adhesion and structural components.</li>
+                </ul>
+
+                <!-- Results -->
+                <h2>Results</h2>
+                <ul>
+                    <li>Successfully demonstrated a lightweight, durable design suitable for underwater conditions.</li>
+                    <li>Adhesion design effectively withstood human-level force applications.</li>
+                    <li>Structural integrity maintained under hydraulic and load testing conditions.</li>
+                </ul>
+
+                <!-- Future Scope -->
+                <h2>Future Scope</h2>
+                <ul>
+                    <li>Enhance connection strength by modifying Velcro spacing and material composition.</li>
+                    <li>Develop larger-scale models for industrial and marine applications.</li>
+                    <li>Incorporate IoT-enabled sensors for real-time monitoring and performance analysis.</li>
+                </ul>
+                <!-- Videos Section -->
+                 <h2>Videos</h2>
+
+                 <!-- Video 1 -->
+                  <p>
+                    Watch the first video on Hydraulic Test: 
+                    <a href="#" onclick="playVideo('videoPlayer1', 'videos/velcro.mp4')" class="button">Play Video</a>
+                </p>
+                <div id="videoPlayer1" style="display:none; margin-top: 20px;">
+                    <video controls style="width:100%; max-width:600px;">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button onclick="closeVideo('videoPlayer1')" style="margin-top: 10px;">Close Video</button>
+                </div>
+
+                <!-- Video 2 -->
+                <p>
+                    Watch the second video on Strength Test: 
+                    <a href="#" onclick="playVideo('videoPlayer2', 'videos/test.mp4')" class="button">Play Video</a>
+                </p>
+                <div id="videoPlayer2" style="display:none; margin-top: 20px;">
+                    <video controls style="width:100%; max-width:600px;">
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button onclick="closeVideo('videoPlayer2')" style="margin-top: 10px;">Close Video</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Get in touch</h2>
+				<dl class="alt">
+					<dt>Address</dt>
+					<dd>University of Delaware &bull; Newark, DE 19716 &bull; USA</dd>
+					<dt>Phone</dt>
+					<dd>(302) 730-6150 </dd>
+					<dt>Email</dt>
+					<dd><a href="mailto:durbhaananth@gmail.com">durbhaananth@gmail.com</a></dd>
+				</dl>
+				<ul class="icons">
+					<li><a href="https://x.com/AnanthDurbha" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100006620868575" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/ananth_durbha/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/durbhaananth" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/durbhaananth/" class="icon brands fa-linkedin alt" target="_blank">
+						<span class="label">LinkedIn</span></a></li>
+				</ul>
+			</section>
+			<p class="copyright">&copy; Ananth Durbha</p>
+		</footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- JavaScript Functions -->
+<script>
+    function playVideo(playerId, videoSrc) {
+        const videoPlayer = document.getElementById(playerId);
+        videoPlayer.style.display = 'block';
+        const videoElement = videoPlayer.querySelector('video');
+        videoElement.querySelector('source').src = videoSrc;
+        videoElement.load();
+        videoElement.play();
+    }
+
+    function closeVideo(playerId) {
+        const videoPlayer = document.getElementById(playerId);
+        const videoElement = videoPlayer.querySelector('video');
+        videoElement.pause();
+        videoElement.querySelector('source').src = "";
+        videoPlayer.style.display = 'none';
+    }
+</script>
+</body>
+</html>

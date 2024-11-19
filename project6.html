@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Deep Learning for Image Classification and Segmentation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Custom style to resize the image */
+        .image.main img {
+            max-width: 50%; /* Reduce width to 50% of the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto; /* Center the image */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1>Deep Learning for Image Classification and Segmentation</h1>
+            <p>Image Classification and Semantic Segmentation using CNNs</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <section id="content" class="main">
+                <!-- Project Image -->
+                <span class="image main"><img src="images/project6.jpg" alt="Deep Learning Project" /></span>
+
+                <!-- About the Project -->
+                <h2>About the Deep Learning Project</h2>
+                <p><strong>Motivation:</strong> Deep learning has revolutionized image processing, enabling advanced classification and segmentation capabilities. This project aimed to leverage CNNs for CIFAR100 image classification and semantic segmentation using FCN models.</p>
+                
+                <!-- Technical Approach -->
+                <h2>Technical Approach</h2>
+                <h3>Part 1: Image Classification with VGG16</h3>
+                <ul>
+                    <li><strong>Model:</strong> Pre-trained VGG16 with the final layer modified for CIFAR100 classification.</li>
+                    <li><strong>Training:</strong> 10 epochs, SGD optimizer with learning rate scheduling, cross-entropy loss.</li>
+                    <li><strong>Results:</strong> Achieved ~85% accuracy.</li>
+                </ul>
+
+                <h3>Part 2: Custom CNN</h3>
+                <ul>
+                    <li><strong>Architecture:</strong> Three convolutional layers, ReLU activations, max-pooling, and fully connected layers.</li>
+                    <li><strong>Training:</strong> 30 epochs, SGD optimizer, cross-entropy loss.</li>
+                    <li><strong>Results:</strong> Achieved ~78% accuracy.</li>
+                </ul>
+
+                <h3>Part 3: Semantic Segmentation</h3>
+                <ul>
+                    <li><strong>Model:</strong> Pre-trained FCN-ResNet101 for semantic segmentation.</li>
+                    <li><strong>Process:</strong> Generated class-based segmentation maps using real-world images.</li>
+                    <li><strong>Results:</strong> High visual clarity in segmentation outputs.</li>
+                </ul>
+
+                <!-- Challenges and Solutions -->
+                <h2>Challenges and Solutions</h2>
+                <ul>
+                    <li><strong>High Variance in Dataset:</strong> Normalized data and applied augmentations like horizontal flips.</li>
+                    <li><strong>Training Stability:</strong> Used learning rate schedulers for steady convergence.</li>
+                    <li><strong>Segmentation Clarity:</strong> Adjusted input sizes and post-processed segmentation maps.</li>
+                </ul>
+
+                <!-- Technologies Used -->
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>Frameworks:</strong> PyTorch, Torchvision.</li>
+                    <li><strong>Models:</strong> VGG16, Custom CNN, FCN-ResNet101.</li>
+                    <li><strong>Datasets:</strong> CIFAR100, real-world images.</li>
+                    <li><strong>Programming Language:</strong> Python.</li>
+                </ul>
+
+                <!-- Results -->
+                <h2>Results</h2>
+                <ul>
+                    <li>Image classification achieved ~85% accuracy with VGG16.</li>
+                    <li>Custom CNN attained ~78% accuracy for CIFAR100 classification.</li>
+                    <li>Semantic segmentation delivered precise and visually clear outputs.</li>
+                </ul>
+
+                <!-- Future Scope -->
+                <h2>Future Scope</h2>
+                <ul>
+                    <li><strong>Advanced Architectures:</strong> Exploring EfficientNet and Vision Transformers for higher accuracy.</li>
+                    <li><strong>Real-Time Segmentation:</strong> Implementing semantic segmentation in real-world robotic applications.</li>
+                    <li><strong>Improved CNN Designs:</strong> Deeper layers for enhanced generalization and better performance.</li>
+                </ul>
+
+                <!-- GitHub Repository -->
+                <h2>GitHub Repository</h2>
+                <p>Explore more about this project on GitHub: <a href="https://github.com/durbhaananth/DeepLearning_ImageClassification_Segmentation_Project.git" target="_blank">Deep Learning Project Repository</a></p>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Get in touch</h2>
+                <dl class="alt">
+                    <dt>Address</dt>
+                    <dd>University of Delaware &bull; Newark, DE 19716 &bull; USA</dd>
+                    <dt>Phone</dt>
+                    <dd>(302) 730-6150 </dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:durbhaananth@gmail.com">durbhaananth@gmail.com</a></dd>
+                </dl>
+                <ul class="icons">
+                    <li><a href="https://x.com/AnanthDurbha" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100006620868575" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/ananth_durbha/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/durbhaananth" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/durbhaananth/" class="icon brands fa-linkedin alt" target="_blank">
+                        <span class="label">LinkedIn</span></a></li>
+                </ul>
+            </section>
+            <p class="copyright">&copy; Ananth Durbha</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

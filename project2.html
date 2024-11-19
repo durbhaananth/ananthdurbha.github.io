@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+    Project 2 - Autonomous Hexapod
+    Created and designed by Ananth Durbha
+-->
+<html>
+<head>
+    <title>Autonomous Hexapod - Project 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Custom style to resize the image */
+        .image.main img {
+            max-width: 50%; /* Reduce width to 50% of the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto; /* Center the image */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Autonomous Hexapod</h1>
+            <p>Bioinspired Hexapod for Adaptable Terrain Navigation</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Content -->
+            <section id="content" class="main">
+                <!-- Project Image -->
+                <span class="image main"><img src="images/project2.jpg" alt="Autonomous Hexapod Project" /></span>
+
+                <!-- About the Project -->
+                <h2>About the Autonomous Hexapod Project</h2>
+                <p><strong>Motivation:</strong> The Autonomous Hexapod project was inspired by the need for versatile robots capable of navigating uneven terrains and performing critical operations in complex environments. The research on hybrid gait planning by Ruyi Wang and Neil Powell served as a significant influence, focusing on stability and operational efficiency through bioinspired gait mechanics.</p>
+                <p><strong>Inspiration:</strong> The hexapod's design drew inspiration from tripod and crab-like movements to achieve adaptability, efficiency, and resilience. This bioinspired approach optimizes the robot's gait to handle unpredictability, making it ideal for dynamic environments like search-and-rescue missions and sensory networks.</p>
+
+                <!-- Technical Overview -->
+                <h2>Technical Overview</h2>
+                <h3>Kinematic Profile</h3>
+                <p>The hexapod robot’s motion was developed using <strong>inverse kinematics algorithms</strong> and geometric parameters like link lengths and joint orientations.</p>
+                <ul>
+                    <li><strong>Tripod Gait:</strong> Alternating leg groups maintain ground contact while others move forward.</li>
+                    <li><strong>Rotation Gait:</strong> Opposing leg groups move in opposite directions to allow rotation without changing position.</li>
+                    <li><strong>Tools Used:</strong> MATLAB and Robotics System Toolbox for trajectory generation and solving inverse kinematics.</li>
+                </ul>
+
+                <h3>Simulated Environment</h3>
+                <p>A simulated environment tested the robot's leg movement:</p>
+                <ul>
+                    <li>Inputs like motor positions and segment lengths were animated in <strong>3D</strong> to visualize joint movement.</li>
+                    <li>The simulation assessed leg range of motion, identifying necessary adjustments before field implementation.</li>
+                    <li><strong>Tools:</strong> MATLAB for scripting and CSV files for trajectory data.</li>
+                </ul>
+
+                <h3>Mechatronics Description</h3>
+                <p>The hexapod uses:</p>
+                <ul>
+                    <li><strong>Servos:</strong> Six servos for coordinated movement (connected to an Arduino Mega).</li>
+                    <li><strong>Gait Logic:</strong> Rotation and forward gait achieved through synchronized leg movements.</li>
+                    <li><strong>Control:</strong> Looping circular leg motion ensures seamless and efficient navigation.</li>
+                </ul>
+
+                <!-- Performance -->
+                <h2>Performance</h2>
+                <ul>
+                    <li><strong>Smooth Walking Patterns:</strong> Effective straight-line movement with minor deviations.</li>
+                    <li><strong>Accurate Rotation:</strong> The robot achieved precision rotational movement without translational drift.</li>
+                    <li><strong>Challenges:</strong> Friction and inertia introduced during field testing were resolved through code refinements.</li>
+                </ul>
+
+                <!-- Challenges and Solutions -->
+                <h2>Challenges and Solutions</h2>
+                <ul>
+                    <li><strong>Sensor Calibration:</strong> Adjusted to improve motion accuracy.</li>
+                    <li><strong>Delay Minimization:</strong> Code revisions reduced actuation delays for smoother operation.</li>
+                    <li><strong>Ground Impact Issues:</strong> Enhanced simulation models to address real-world environmental factors.</li>
+                </ul>
+
+                <!-- Technologies Used -->
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>Programming:</strong> MATLAB, TinkerCAD, and Arduino IDE.</li>
+                    <li><strong>Simulation:</strong> Robotics System Toolbox for kinematic modeling.</li>
+                    <li><strong>Hardware:</strong> Arduino Mega, servo motors, and custom wiring setups.</li>
+                </ul>
+
+                <!-- Results -->
+                <h2>Results</h2>
+                <ul>
+                    <li>Stable walking and rotational gaits with bioinspired mechanics.</li>
+                    <li>Minimal deviations during straight-line movements.</li>
+                    <li>Smooth actuation sequences validated through benchtop and field testing.</li>
+                </ul>
+
+                <!-- Future Scope -->
+                <h2>Future Scope</h2>
+                <ul>
+                    <li><strong>Advanced Sensing:</strong> Integration of tactile sensors for real-time adaptability.</li>
+                    <li><strong>AI Integration:</strong> Use of machine learning for optimizing gait over time.</li>
+                    <li><strong>Applications:</strong> Deployment in disaster zones for search-and-rescue missions.</li>
+                </ul>
+
+               
+                <!-- Video of Hexapod -->
+				<h2>Video</h2>
+				<p>
+					Watch the Autonomous Hexapod in action: 
+					<a href="#" onclick="playVideo('videos/hexapod.mp4')" class="button">Play Video</a>
+				</p>
+				<div id="videoPlayer" style="display:none; margin-top: 20px;">
+					<video controls style="width:100%; max-width:600px;">
+						<source src="" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<button onclick="closeVideo()" style="margin-top: 10px;">Close Video</button>
+				</div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Get in touch</h2>
+                <dl class="alt">
+                    <dt>Address</dt>
+                    <dd>University of Delaware &bull; Newark, DE 19716 &bull; USA</dd>
+                    <dt>Phone</dt>
+                    <dd>(302) 730-6150 </dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:durbhaananth@gmail.com">durbhaananth@gmail.com</a></dd>
+                </dl>
+                <ul class="icons">
+                    <li><a href="https://x.com/AnanthDurbha" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://github.com/durbhaananth" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+            <p class="copyright">&copy; Ananth Durbha</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+	<script>
+		function playVideo(videoSrc) {
+			const videoPlayer = document.getElementById('videoPlayer');
+			const video = videoPlayer.querySelector('video');
+			video.src = videoSrc;
+			videoPlayer.style.display = 'block';
+			video.play();
+		}
+	
+		function closeVideo() {
+			const videoPlayer = document.getElementById('videoPlayer');
+			const video = videoPlayer.querySelector('video');
+			video.pause();
+			video.src = '';
+			videoPlayer.style.display = 'none';
+		}
+	</script>	
+</body>
+</html>

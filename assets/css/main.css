@@ -2,9 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
 */
 
 html, body, div, span, applet, object,
@@ -99,8 +97,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #3a2538;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #13274F 15%, #241f36 85%);
+		background-color: #120568;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #0e1f42 15%, #241f36 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #13274F 15%, #241f36 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #13274F 15%, #241f36 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #13274F 15%, #241f36 85%);
@@ -120,7 +118,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #B9D9EB;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -3938,4 +3936,14 @@ section.main h2 {
     font-weight: bold;
     text-transform: uppercase; /* Optional: Make headings uppercase */
     letter-spacing: 0.1em; /* Optional: Slight letter spacing for a polished look */
+}
+
+
+body {
+    background: linear-gradient(45deg, #13274F 85%, #241f36 25%), #537588; /* Gradient over sky blue */
+    background-blend-mode: overlay; /* Blend gradient with existing background */
+    color: rgba(255, 255, 255, 0.85); /* Ensure text remains readable */
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 17pt;
+    line-height: 1.65;
 }

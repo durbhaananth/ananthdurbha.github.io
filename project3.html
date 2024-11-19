@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+    Project 3 - Trajectory Planning for KUKA LBR iiwa 7 R800
+    Created and designed by Ananth Durbha
+-->
+<html>
+<head>
+    <title>KUKA LBR iiwa 7 R800 - Project 3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Custom style to resize the image */
+        .image.main img {
+            max-width: 50%; /* Reduce width to 50% of the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto; /* Center the image */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Trajectory Planning for KUKA LBR iiwa 7 R800</h1>
+            <p>Efficient robotic motion planning for industrial automation.</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Content -->
+            <section id="content" class="main">
+                <!-- Project Image -->
+                <span class="image main"><img src="images/project3.jpg" alt="KUKA Trajectory Planning" /></span>
+
+                <!-- About the Project -->
+                <h2>About the Project</h2>
+                <p><strong>Motivation:</strong> This project explores the precise control and motion planning capabilities of the KUKA LBR iiwa 7 R800 robotic arm, focusing on real-world applications of robotics in dynamic environments. The primary objective is to program the robot to position a rectangular shape accurately on a rectangular target within its workspace. Leveraging an Aruco marker for target detection, the robotic arm uses a camera mounted on its flange to determine the target’s location and orientation. The trajectory planning, executed in joint space, ensures compliance with joint constraints and achieves the desired motion with precision in exactly 10 seconds. This project demonstrates the potential of robotics in precision tasks, offering insights into advanced motion planning and real-time adaptability.</p>
+                <p><strong>Inspiration:</strong> Inspired by the increasing demand for precision in robotics, this project incorporated modern control techniques and efficient kinematic modeling to achieve seamless and reliable trajectory planning.</p>
+
+                <!-- Technical Overview -->
+                <h2>Technical Overview</h2>
+                <p>The project involved the development of trajectory planning algorithms for a 7-DOF robotic arm:</p>
+                <ul>
+                    <li><strong>Kinematic Modeling:</strong> Forward and inverse kinematics equations were derived to model the robot's movements accurately.</li>
+                    <li><strong>Trajectory Planning:</strong> Polynomial interpolation and linear segment blending techniques were used to design smooth joint-space trajectories.</li>
+                    <li><strong>Execution Time:</strong> A 10-second time frame was optimized for point-to-point motion tasks, balancing precision and speed.</li>
+                    <li><strong>Simulation Tools:</strong> MATLAB Robotics Toolbox for trajectory generation and visualization.</li>
+                </ul>
+
+                <!-- Challenges and Solutions -->
+                <h2>Challenges and Solutions</h2>
+                <ul>
+                    <li><strong>Precision Optimization:</strong> Achieved sub-millimeter precision in end-effector positioning by refining kinematic calculations.</li>
+                    <li><strong>Collision Avoidance:</strong> Implemented dynamic constraints to prevent collisions in cluttered environments.</li>
+                    <li><strong>Computational Efficiency:</strong> Optimized algorithms to reduce computation time without sacrificing accuracy.</li>
+                </ul>
+
+                <!-- Results -->
+                <h2>Results</h2>
+                <ul>
+                    <li>Achieved precise point-to-point motion within a 10-second time frame.</li>
+                    <li>Validated smooth trajectory execution with MATLAB simulations.</li>
+                    <li>Demonstrated improved motion efficiency and reduced operational time for industrial tasks.</li>
+                </ul>
+
+                <!-- Technologies Used -->
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>Programming:</strong> MATLAB, Robotics System Toolbox.</li>
+                    <li><strong>Hardware:</strong> KUKA LBR iiwa 7 R800 robotic arm.</li>
+                    <li><strong>Mathematical Modeling:</strong> Forward and inverse kinematics, trajectory interpolation.</li>
+                </ul>
+
+                <!-- Future Scope -->
+                <h2>Future Scope</h2>
+                <ul>
+                    <li><strong>Real-Time Adaptability:</strong> Incorporate sensor feedback to dynamically adjust trajectories in real time.</li>
+                    <li><strong>AI Integration:</strong> Use machine learning for predictive motion planning.</li>
+                    <li><strong>Industrial Applications:</strong> Extend to complex tasks like welding and assembly line automation.</li>
+                </ul>
+
+                <!-- GitHub Repository -->
+                <h2>GitHub Repository</h2>
+                <p>
+                    Explore more about this project on GitHub: <a href="https://github.com/durbhaananth/KUKA_Robotic_Arm_Project" target="_blank">KUKA Robotic Arm Project Repository</a>
+                </p>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Get in touch</h2>
+                <dl class="alt">
+                    <dt>Address</dt>
+                    <dd>University of Delaware &bull; Newark, DE 19716 &bull; USA</dd>
+                    <dt>Phone</dt>
+                    <dd>(302) 730-6150 </dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:durbhaananth@gmail.com">durbhaananth@gmail.com</a></dd>
+                </dl>
+                <ul class="icons">
+                    <li><a href="https://x.com/AnanthDurbha" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://github.com/durbhaananth" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/durbhaananth/" class="icon brands fa-linkedin alt" target="_blank"><span class="label">LinkedIn</span></a></li>
+                </ul>
+            </section>
+            <p class="copyright">&copy; Ananth Durbha</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
